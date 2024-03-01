@@ -69,5 +69,5 @@ Combines three losses:
 - Bounding box regression loss: Smooth L1 loss between predicted bounding box adjustments and ground truth bounding box adjustments (only for foreground samples).
 - Classification loss: Binary cross-entropy between predicted class probabilities (tumor or no tumor) and ground truth class labels.
 #### Imbalance Handling: 
-- During training, a sampler(RandomSampler) class is used to balance foreground and background samples (3 foreground and 3 background samples in my ca se) for RPN loss calculation. This addresses the bias towards negative samples due to the presence of many background regions in the images.  
+- During training, a sampler(RandomSampler) class is used to balance foreground and background samples (3 foreground and 3 background samples in my case) for RPN loss calculation. This addresses the bias towards negative samples due to the presence of many background regions in the images.  
 
